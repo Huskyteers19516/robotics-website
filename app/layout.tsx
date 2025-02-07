@@ -13,6 +13,7 @@ const inter = Inter({
 const jockeyOne = Jockey_One({
     variable: "--font-jockey-one-next",
     weight: "400",
+    subsets: ["latin"],
 })
 
 export const metadata: Metadata = {
