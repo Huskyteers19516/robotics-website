@@ -1,4 +1,5 @@
 import { BackgroundBeams } from "@/components/ui/background-beams"
+import { TextHoverEffect } from "@/components/ui/text-hover-effect"
 import { Timeline, TimelineEntry } from "@/components/ui/timeline"
 
 export default function Home() {
@@ -46,10 +47,8 @@ export default function Home() {
     return (
         <main>
             <div className="h-[40rem] w-full rounded-md flex md:items-center md:justify-center bg-background/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
-                <div className="p-4 max-w-7xl  mx-auto relative z-10  w-full pt-20 md:pt-0">
-                    <h1 className="lg:text-[20rem] italic text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-primary to-foreground bg-opacity-50 drop-shadow-lg">
-                        19516
-                    </h1>
+                <div className="p-4 max-w-7xl  mx-auto relative z-10  w-full pt-20 md:pt-0 lg:text-[20rem] italic text-7xl font-bold text-center">
+                    <TextHoverEffect text={"19516"} />
                     {/* <p className="mt-4 font-normal text-base text-foreground max-w-lg text-center mx-auto">
                         The Huskyteers
                     </p> */}

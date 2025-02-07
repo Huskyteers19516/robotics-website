@@ -30,14 +30,14 @@ export default function RootLayout({
         <html
             lang="en"
             suppressHydrationWarning
-            className={`${inter.variable} ${jockeyOne.variable} font-inter bg-background text-foreground`}
+            className={`${inter.variable} ${jockeyOne.variable} font-inter bg-background text-foreground transition-colors duration-500`}
         >
             <body className={`antialiased`}>
                 <ThemeProvider
+                    disableTransitionOnChange={false}
                     attribute="class"
                     defaultTheme="system"
                     enableSystem
-                    disableTransitionOnChange
                 >
                     <Header />
                     {children}
