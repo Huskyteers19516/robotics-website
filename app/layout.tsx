@@ -35,6 +35,9 @@ export default function RootLayout({
             suppressHydrationWarning
             className={`${inter.variable} ${jockeyOne.variable} font-inter bg-background text-foreground transition-colors duration-500`}
         >
+            <head>
+                <meta name="apple-mobile-web-app-title" content="Huskyteers" />
+            </head>
             <body className={`antialiased`}>
                 <ThemeProvider
                     disableTransitionOnChange={false}
