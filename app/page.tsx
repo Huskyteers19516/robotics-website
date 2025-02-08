@@ -27,11 +27,11 @@ function SeasonPage({
                         <li key={award}>{award}</li>
                     ))}
                 </ul>
-                <Link href={href}>
+                {/* <Link href={href}>
                     <Button className="mt-4">
                         Learn More <ArrowUpRight />
                     </Button>
-                </Link>
+                </Link> */}
             </div>
             <Link href={href}>
                 {image && (

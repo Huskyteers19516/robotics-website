@@ -41,16 +41,15 @@ const Footer = () => {
                         </h3>
                         <ul className="space-y-2">
                             <li>
-                                <StyledLink href="#">Home</StyledLink>
+                                <StyledLink href="/">Home</StyledLink>
                             </li>
                             <li>
-                                <StyledLink href="#">About</StyledLink>
+                                <StyledLink href="/about">About</StyledLink>
                             </li>
                             <li>
-                                <StyledLink href="#">Services</StyledLink>
-                            </li>
-                            <li>
-                                <StyledLink href="#">Contact</StyledLink>
+                                <StyledLink href="/sponsors">
+                                    Contact
+                                </StyledLink>
                             </li>
                         </ul>
                     </div>
