@@ -4,6 +4,8 @@ import "./globals.css"
 import Footer from "./footer"
 import Header from "./header"
 import { ThemeProvider } from "@/components/theme-provider"
+import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({
     variable: "--font-inter-next",
@@ -44,6 +46,8 @@ export default function RootLayout({
                     {children}
                     <Footer />
                 </ThemeProvider>
+                <SpeedInsights />
+                <Analytics />
             </body>
         </html>
     )
