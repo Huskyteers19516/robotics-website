@@ -71,9 +71,9 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <Separator />
+                <Separator className="my-8" />
 
-                <div className="mt-8 pt-8 text-center text-muted-foreground">
+                <div className="text-center text-muted-foreground">
                     <p>
                         &copy; {new Date().getFullYear()} The Huskyteers. All
                         rights reserved.

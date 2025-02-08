@@ -1,11 +1,11 @@
 "use client"
-import {
-    useMotionValueEvent,
-    useScroll,
-    useTransform,
-    motion,
-} from "framer-motion"
+import { useScroll, useTransform, motion } from "framer-motion"
+import Image from "next/image"
 import React, { useEffect, useRef, useState } from "react"
+import TeamImage from "@/app/images/2023-2024/team.png"
+import Link from "next/link"
+import { Button } from "./button"
+import { ArrowUpRight } from "lucide-react"
 
 export interface TimelineEntry {
     title: string
@@ -35,14 +35,31 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
     return (
         <div className="mx-auto font-inter container" ref={containerRef}>
-            <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
-                <h2 className="text-lg md:text-4xl mb-4 text-foreground max-w-4xl">
-                    Huskyteers Timeline
-                </h2>
-                <p className="text-muted-foreground text-sm md:text-base max-w-sm">
-                    We've been an FTC team since 2021, and we've had a lot of
-                    experiences since then.
-                </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 place-items-start">
+                <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
+                    <h2 className="text-lg md:text-4xl mb-4 text-foreground max-w-4xl font-semibold">
+                        About Us
+                    </h2>
+                    <p className="text-muted-foreground text-sm md:text-base max-w-sm">
+                        We are an FTC team from Fairmont Preparatory Academy,
+                        entering our third year in the FIRST Tech Challenge.
+                        Combining business and technical skills, our team
+                        thrives on collaboration and innovation, driven by
+                        strong bonds and a shared commitment to STEM excellence.
+                    </p>
+                    <Link href="/about">
+                        <Button className="mt-3">
+                            Our Team <ArrowUpRight />
+                        </Button>
+                    </Link>
+                </div>
+                <Link href="/about">
+                    <Image
+                        src={TeamImage}
+                        className="rounded-lg shadow-sm"
+                        alt="Team Photo"
+                    />
+                </Link>
             </div>
 
             <div ref={ref} className="relative max-w-7xl mx-auto pb-20">

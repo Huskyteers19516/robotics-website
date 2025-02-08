@@ -2,9 +2,10 @@ import { BackgroundBeams } from "@/components/ui/background-beams"
 import { Timeline, TimelineEntry } from "@/components/ui/timeline"
 import TextReveal from "./text-reveal"
 import Image, { StaticImageData } from "next/image"
-import Season2024Image from "@/app/images/2024/robot.jpg"
+import Season2024Image from "@/app/images/2023-2024/robot.jpg"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import { ArrowUpRight } from "lucide-react"
 
 function SeasonPage({
     href,
@@ -27,29 +28,33 @@ function SeasonPage({
                     ))}
                 </ul>
                 <Link href={href}>
-                    <Button className="mt-4">Learn More</Button>
+                    <Button className="mt-4">
+                        Learn More <ArrowUpRight />
+                    </Button>
                 </Link>
             </div>
-            {image && (
-                <Image
-                    src={image}
-                    alt="Season Image"
-                    className="rounded-lg object-cover h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-                />
-            )}
-            {video && (
-                <video
-                    width="320"
-                    height="240"
-                    autoPlay
-                    muted
-                    loop
-                    className="rounded-lg object-cover h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-                >
-                    <source src={video} type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
-            )}
+            <Link href={href}>
+                {image && (
+                    <Image
+                        src={image}
+                        alt="Season Image"
+                        className="rounded-lg object-cover h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                    />
+                )}
+                {video && (
+                    <video
+                        width="320"
+                        height="240"
+                        autoPlay
+                        muted
+                        loop
+                        className="rounded-lg object-cover h-60 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                    >
+                        <source src={video} type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                )}
+            </Link>
         </div>
     )
 }
@@ -82,7 +87,7 @@ export default function Home() {
                         "Promote Award - 1st Place",
                         "Compass Award - 3rd Place",
                     ]}
-                    video="/images/2023/robot.mp4"
+                    video="/images/2022-2023/robot.mp4"
                 />
             ),
         },
