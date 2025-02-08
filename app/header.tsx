@@ -16,8 +16,8 @@ import Link from "next/link"
 
 export default function Header() {
     return (
-        <header className="sticky top-0 z-50 bg-primary/20 backdrop-blur-3xl shadow-md min-h-12 shadow-foreground/20">
-            <div className="container mx-auto px-4 flex justify-between items-center">
+        <header className="sticky top-0 z-50 bg-primary/20 backdrop-blur-3xl shadow-md min-h-12 shadow-foreground/20 py-3">
+            <div className="container mx-auto px-4 flex flex-wrap gap-3 md:justify-between md:place-content-between justify-center place-content-center">
                 <Link
                     href="/"
                     className="font-jockey text-foreground flex flex-row place-items-center"

@@ -109,7 +109,7 @@ export default function Home() {
     return (
         <main>
             <div className="h-[40rem] w-full rounded-md flex md:items-center md:justify-center bg-background/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
-                <div className="p-4 max-w-7xl mx-auto relative z-10  w-full pt-20 md:pt-0 lg:text-[20rem] italic text-7xl font-bold text-center">
+                <div className="p-4 max-w-7xl mx-auto relative z-10 w-full pt-20 md:pt-0 lg:text-[20rem] italic md:text-[16rem] sm:text-[10rem] font-bold text-center">
                     <TextReveal text="19516" />
                     <p className="mt-4 font-normal text-base text-foreground max-w-lg text-center mx-auto not-italic">
                         Hi, we're 19516 Huskyteers, a First Tech Challenge (FTC)
