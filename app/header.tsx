@@ -37,7 +37,7 @@ export default function Header() {
                         <NavigationMenuList>
                             <HeaderLink href="/">Home</HeaderLink>
                             <HeaderLink href="/about">About</HeaderLink>
-                            <HeaderLink href="/contact">Contact</HeaderLink>
+                            <HeaderLink href="/sponsors">Sponsors</HeaderLink>
                         </NavigationMenuList>
                     </NavigationMenu>
                     <ModeToggle />
