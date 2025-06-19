@@ -3,6 +3,7 @@ import { Timeline, TimelineEntry } from "@/components/ui/timeline"
 import TextReveal from "./text-reveal"
 import Image, { StaticImageData } from "next/image"
 import Season2024Image from "@/app/images/2023-2024/robot.jpg"
+import Season2025Image from "@/app/images/2024-2025/robot.webp"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { ArrowUpRight } from "lucide-react"
@@ -61,6 +62,32 @@ function SeasonPage({
 
 export default function Home() {
     const timelineData: TimelineEntry[] = [
+        {
+            title: "FTC Decode",
+            season: "2025-2026",
+            content: (
+                <SeasonPage
+                    href="/centerstage"
+                    image={Season2024Image}
+                    awards={[
+                        "Coming Soon",
+                    ]}
+                />
+            ),
+        },
+        {
+            title: "FTC Into the Deep",
+            season: "2024-2025",
+            content: (
+                <SeasonPage
+                    href="/centerstage"
+                    image={Season2025Image}
+                    awards={[
+                        "Connect Award - 1st Place",
+                    ]}
+                />
+            ),
+        },
         {
             title: "FTC Centerstage",
             season: "2023-2024",
