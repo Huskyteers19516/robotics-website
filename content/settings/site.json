@@ -1,0 +1,43 @@
+{
+  "title": "The Huskyteers",
+  "teamName": "The Huskyteers",
+  "teamNumber": 19516,
+  "navBarLinks": [
+    {
+      "name": "Home",
+      "link": "/"
+    },
+    {
+      "name": "About",
+      "link": "/about"
+    },
+    {
+      "name": "Sponsors",
+      "link": "/sponsors"
+    }
+  ],
+  "contactUsText": "Contact The Huskyteers",
+  "email": "fpahuskyteers19516@gmail.com",
+  "address": "2200 W Sequoia Ave\nAnaheim, CA 92801",
+  "addressLink": "https://www.google.com/maps/search/?api=1&query=Fairmont+Preparatory+Academy&query_place_id=ChIJl5NscI8p3YARFUgyxdOSU2c",
+  "quickLinksText": "Quick Links",
+  "quickLinks": [
+    {
+      "name": "Home",
+      "link": "/"
+    },
+    {
+      "name": "About",
+      "link": "/about"
+    },
+    {
+      "name": "Sponsors",
+      "link": "/sponsors"
+    }
+  ],
+  "socialsText": "Socials",
+  "instagram": "https://www.instagram.com/ftc19516/",
+  "youtube": "https://www.youtube.com/channel/UC0NosafokRUY4pVAHCzd94Q",
+  "discord": "https://discord.gg/JZuEqanpV3",
+  "github": "https://github.com/Huskyteers19516"
+}

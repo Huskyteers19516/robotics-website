@@ -6,6 +6,7 @@ import Header from "./header"
 import { ThemeProvider } from "@/components/theme-provider"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from "@vercel/analytics/react"
+import client from "@/tina/__generated__/client"
 
 const inter = Inter({
     variable: "--font-inter-next",
@@ -24,11 +25,15 @@ export const metadata: Metadata = {
         "The Huskyteers are a FIRST Tech Challenge team based in the Anaheim, California.",
 }
 
-export default function RootLayout({
+export default async function RootLayout({
     children,
 }: Readonly<{
     children: React.ReactNode
 }>) {
+    const siteSettings = await client.queries.siteSettings({
+        relativePath: "site.json",
+    })
+
     return (
         <html
             lang="en"
@@ -45,9 +50,9 @@ export default function RootLayout({
                     defaultTheme="system"
                     enableSystem
                 >
-                    <Header />
+                    <Header {...siteSettings} />
                     {children}
-                    <Footer />
+                    <Footer {...siteSettings} />
                 </ThemeProvider>
                 <SpeedInsights />
                 <Analytics />
