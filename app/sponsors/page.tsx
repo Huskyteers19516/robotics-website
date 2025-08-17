@@ -89,11 +89,11 @@ export default function SponsorsPage() {
         <main className="flex flex-col items-center pt-8 w-full min-h-screen container mx-auto mb-10 text-center px-3">
             <div>
                 <h1 className="text-4xl font-bold">Our Sponsors</h1>
-                <div className="px-4 max-w-2xl flex flex-wrap gap-4 place-items-start justify-center">
+                {/* <div className="px-4 max-w-2xl flex flex-wrap gap-4 place-items-start justify-center">
                     {sponsors.map((sponsor) => (
                         <Sponsor key={sponsor.alt} {...sponsor} />
                     ))}
-                </div>
+                </div> */}
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 place-items-center">
                 <Image src={RobotOutlined} alt="Robot" className="max-w-md" />
