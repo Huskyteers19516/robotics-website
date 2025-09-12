@@ -30,10 +30,6 @@ export default async function RootLayout({
 }: Readonly<{
     children: React.ReactNode
 }>) {
-    const siteSettings = await client.queries.siteSettings({
-        relativePath: "site.json",
-    })
-
     return (
         <html
             lang="en"
@@ -50,9 +46,9 @@ export default async function RootLayout({
                     defaultTheme="system"
                     enableSystem
                 >
-                    <Header {...siteSettings} />
+                    <Header />
                     {children}
-                    <Footer {...siteSettings} />
+                    <Footer />
                 </ThemeProvider>
                 <SpeedInsights />
                 <Analytics />

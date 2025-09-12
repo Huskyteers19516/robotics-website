@@ -47,13 +47,13 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
                         thrives on collaboration and innovation, driven by
                         strong bonds and a shared commitment to STEM excellence.
                     </p>
-                    <Link href="/about">
+                    <Link href="/about/team">
                         <Button className="mt-3">
                             Our Team <ArrowUpRight />
                         </Button>
                     </Link>
                 </div>
-                <Link href="/about">
+                <Link href="/about/team">
                     <Image
                         src={TeamImage}
                         className="rounded-lg shadow-sm"
