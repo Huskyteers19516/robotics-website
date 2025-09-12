@@ -69,9 +69,7 @@ export default function Home() {
                 <SeasonPage
                     href="/centerstage"
                     image={Season2024Image}
-                    awards={[
-                        "Coming Soon",
-                    ]}
+                    awards={["Coming Soon"]}
                 />
             ),
         },
@@ -82,9 +80,7 @@ export default function Home() {
                 <SeasonPage
                     href="/centerstage"
                     image={Season2025Image}
-                    awards={[
-                        "Connect Award - 1st Place",
-                    ]}
+                    awards={["Connect Award - 1st Place"]}
                 />
             ),
         },
@@ -139,8 +135,8 @@ export default function Home() {
                 <div className="p-4 max-w-7xl mx-auto relative z-10 w-full pt-20 md:pt-0 lg:text-[20rem] italic md:text-[16rem] sm:text-[10rem] font-bold text-center">
                     <TextReveal text="19516" />
                     <p className="mt-4 font-normal text-base text-foreground max-w-lg text-center mx-auto not-italic">
-                        Hi, we're 19516 Huskyteers, a First Tech Challenge (FTC)
-                        robotics in Anaheim, California.
+                        Hi, we&apos;re 19516 Huskyteers, a First Tech Challenge
+                        (FTC) robotics team based in Anaheim, California.
                     </p>
                 </div>
                 <BackgroundBeams />
