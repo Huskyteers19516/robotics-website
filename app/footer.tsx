@@ -7,7 +7,6 @@ import {
 } from "@icons-pack/react-simple-icons"
 import { Separator } from "@/components/ui/separator"
 import StyledLink from "@/components/styled-link"
-import { tinaField, useTina } from "tinacms/dist/react"
 
 const Footer = () => {
     return (

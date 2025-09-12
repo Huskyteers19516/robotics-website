@@ -9,9 +9,7 @@ import {
     NavigationMenuTrigger,
     navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
-import Image from "next/image"
 import Link from "next/link"
-import { tinaField, useTina } from "tinacms/dist/react"
 
 export default function Header() {
     return (

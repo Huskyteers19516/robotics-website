@@ -6,7 +6,6 @@ import Header from "./header"
 import { ThemeProvider } from "@/components/theme-provider"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from "@vercel/analytics/react"
-import client from "@/tina/__generated__/client"
 
 const inter = Inter({
     variable: "--font-inter-next",
