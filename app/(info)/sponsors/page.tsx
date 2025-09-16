@@ -15,6 +15,8 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
+import { ArrowUpRight } from "lucide-react"
 
 function Sponsor({
     href,
@@ -111,15 +113,17 @@ export default function SponsorsPage() {
                     <br />
                     <p>
                         If you are interested in sponsoring our team, please
-                        contact us at{" "}
-                        <Link
-                            className="text-blue-700 hover:text-blue-800 dark:text-blue-300 dark:hover:text-blue-200 underline"
-                            href="mailto:fpahuskyteers19516@gmail.com"
-                        >
-                            fpahuskyteers19516@gmail.com
-                        </Link>
-                        .
+                        click the button below.
                     </p>
+                    <Button asChild className="mt-5">
+                        <Link
+                            href="https://docs.google.com/forms/d/e/1FAIpQLSfGc8u_omWk9J0BJhdE-9z5tGH8SfqVsf5kG_ZF3Rlp95ghpg/viewform"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Sponsor Us <ArrowUpRight />
+                        </Link>
+                    </Button>
                 </div>
             </div>
         </main>
