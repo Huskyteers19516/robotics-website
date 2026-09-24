@@ -131,7 +131,7 @@ export default function AboutPage() {
                 <h1 className="font-bold text-4xl mb-5">Our Team</h1>
                 <p>
                     We are an FTC team from Fairmont Preparatory Academy,
-                    entering our third year in the FIRST Tech Challenge.
+                    entering our sixth year in the FIRST Tech Challenge.
                     Combining business and technical skills, our team thrives on
                     collaboration and innovation, driven by strong bonds and a
                     shared commitment to STEM excellence.
