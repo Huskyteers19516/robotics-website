@@ -9,7 +9,31 @@ import {
 } from "@/components/ui/card"
 import Image, { StaticImageData } from "next/image"
 import React from "react"
-
+import tommyHo from "@/app/images/2026-2027/tommyho.png 
+import willLi from "@/app/images/2026-2027/willLi.png"
+import paigeBantz from "@/app/images/2026-2027/paigeBantz.png"
+import aaronSun from "@/app/images/2026-2027/aaronSun.png"
+import maxKu from "@/app/images/2026-2027/maxKu.png" 
+import elizabethHyodo from "@/app/images/2026-2027/elizabethHyodo.png"
+import timJung from "@/app/images/2026-2027/timJung.png"
+import adenNunes from "@/app/images/2026-2027/adenNunes.png"
+import aliceWang from "@/app/images/2026-2027/aliceWang.png"
+import brandonShu from "@/app/images/2026-2027/brandonShu.png"
+import ethanZhang from "@/app/images/2026-2027/ethanZhang.png"
+import felixGu from "@/app/images/2026-2027/felixGu.png"
+import frankWang from "@/app/images/2026-2027/frankWang.png"
+import grantStory from "@/app/images/2026-2027/grantStory.png"
+import gwenLengsfeld from "@/app/images/2026-2027/gwenLengsfeld.png"
+import ianNguyen from "@/app/images/2026-2027/ianNguyen.png"
+import jackHu from "@/app/images/2026-2027/jackHu.png"
+import jackLuo from "@/app/images/2026-2027/jackLuo.png"
+import jasonLuo from "@/app/images/2026-2027/jasonLuo.png"
+import jaylenHon from "@/app/images/2026-2027/jaylenHon.png"
+import michaelHyodo from "@/app/images/2026-2027/michaelHyodo.png"
+import msRamirez from "@/app/images/2026-2027/ms.Ramirez.png"
+import stephenYuan from "@/app/images/2026-2027/stephenYuan.png"
+import williamMan from "@/app/images/2026-2027/williamMan.png"
+import wolfgangLengsfeld from "@/app/images/2026-2027/wolfgangLengsfeld.png"
 function Person({
     name,
     roles,
@@ -87,39 +111,38 @@ export default function AboutPage() {
         },
         {
             people: [
-                { name: "Grant Story", roles: [buildLead] },
-                { name: "Wolfgang Lengsfeld", roles: [buildLead] },
-                { name: "Ethan Zhang", roles: [buildLead] },
-                { name: "Gwendolyn Lengsfeld", roles: [businessLead] },
-                { name: "Jack Luo", roles: [softwareLead] },
+                { name: "Grant Story", roles: [buildLead], image: grantStory },
+                { name: "Wolfgang Lengsfeld", roles: [buildLead], image: wolfgangLengsfeld },
+                { name: "Ethan Zhang", roles: [buildLead], image: ethanZhang },
+                { name: "Gwendolyn Lengsfeld", roles: [businessLead], image: gwenLengsfeld },
+                { name: "Jack Luo", roles: [softwareLead], image: jackLuo },
             ],
         },
         {
             title: "Members",
             people: [
-                { name: "Maximus Ku", roles: [buildTeam] },
-                { name: "Tim Jung", roles: [buildTeam] },
-                { name: "Michael Hyodo", roles: [softwareTeam] },
-                { name: "Tim Jung", roles: [softwareTeam] },
-                { name: "Elizabeth Hyodo", roles: [businessTeam] },
+                { name: "Maximus Ku", roles: [buildTeam], image: maxKu },
+                { name: "Michael Hyodo", roles: [softwareTeam], image: michaelHyodo },
+                { name: "Tim Jung", roles: [softwareTeam], image: timJung },
+                { name: "Elizabeth Hyodo", roles: [businessTeam], image: elizabethHyodo },
                 { name: "Viraaj Gaggar", roles: [businessTeam] },
                 { name: "Alivia Hsu", roles: [businessTeam] },
-                { name: "Jason Luo", roles: [businessTeam] },
+                { name: "Jason Luo", roles: [businessTeam], image: jasonLuo },
                 { name: "Tiffany Yang", roles: [businessTeam] },
-                { name: "Felix Gu", roles: [softwareTeam] },
-                { name: "Jack Hu", roles: [softwareTeam] },
-                { name: "Brandon Shu", roles: [softwareTeam] },
-                { name: "Alice Wang", roles: [softwareTeam] },
-                { name: "Frank Wang", roles: [softwareTeam] },
-                { name: "Stephen Yuan", roles: [softwareTeam] },
-                { name: "Paige Bantz", roles: [buildTeam] },
+                { name: "Felix Gu", roles: [softwareTeam], image: felixGu },
+                { name: "Jack Hu", roles: [softwareTeam], image: jackHu },
+                { name: "Brandon Shu", roles: [softwareTeam], image: brandonShu },
+                { name: "Alice Wang", roles: [softwareTeam], image: aliceWang },
+                { name: "Frank Wang", roles: [softwareTeam], image: frankWang },
+                { name: "Stephen Yuan", roles: [softwareTeam], image: stephenYuan },
+                { name: "Paige Bantz", roles: [buildTeam], image: paigeBantz },
                 { name: "Daksh Bhatnagar", roles: [buildTeam] },
-                { name: "Jaylen Hon", roles: [buildTeam] },
-                { name: "Will Li", roles: [buildTeam] },
-                { name: "William Man", roles: [buildTeam] },
-                { name: "Ian Nguyen", roles: [buildTeam] },
-                { name: "Aden Nunes", roles: [buildTeam] },
-                { name: "Aaron Sun", roles: [buildTeam] },
+                { name: "Jaylen Hon", roles: [buildTeam], image: jaylenHon },
+                { name: "Will Li", roles: [buildTeam], image: willLi },
+                { name: "William Man", roles: [buildTeam], image: williamMan },
+                { name: "Ian Nguyen", roles: [buildTeam], image: ianNguyen },
+                { name: "Aden Nunes", roles: [buildTeam], image: adenNunes },
+                { name: "Aaron Sun", roles: [buildTeam], image: aaronSun },
                 
             ],
         },
@@ -134,7 +157,7 @@ export default function AboutPage() {
                     entering our sixth year in the FIRST Tech Challenge.
                     Combining business and technical skills, our team thrives on
                     collaboration and innovation, driven by strong bonds and a
-                    shared commitment to STEM excellence.
+                    shared co   mmitment to STEM excellence.
                     <br />
                     <br />
                     Fairmont Prep Robotics is dedicated to building a culture of
