@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/card"
 import Image, { StaticImageData } from "next/image"
 import React from "react"
-import tommyHo from "@/app/images/2026-2027/tommyho.png 
+import tommyHo from "@/app/images/2026-2027/tommyho.png"
 import willLi from "@/app/images/2026-2027/willLi.png"
 import paigeBantz from "@/app/images/2026-2027/paigeBantz.png"
 import aaronSun from "@/app/images/2026-2027/aaronSun.png"

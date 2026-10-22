@@ -17,10 +17,11 @@ export default function AboutPage() {
                 <h1 className="font-bold text-4xl mb-5">Our Team</h1>
                 <p>
                     We are an FTC team from Fairmont Preparatory Academy,
-                    entering our sixth year in the FIRST Tech Challenge.
-                    Combining business and technical skills, our team thrives on
-                    collaboration and innovation, driven by strong bonds and a
-                    shared commitment to STEM excellence.
+                    entering our fifth year in the FIRST Tech Challenge.
+                    Combining strong a outreach team and technical skills 
+                    in building and software, our team thrives on collaboration 
+                    and innovation, driven by strong bonds and a shared 
+                    commitment to STEM excellence.
                     <br />
                     <br />
                     Fairmont Prep Robotics is dedicated to building a culture of
